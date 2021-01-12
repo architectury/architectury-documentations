@@ -22,7 +22,7 @@ Architectury Plugin adds [Architectury Injectables](https://github.com/architect
 Inject `injectInjectables = false` in front of `common()` in the common module architectury extension block.
 
 ### ArchitecturyTarget
-Architectury Injectables provide `ArchitecturyTarget.getCurrentTarget()`, which returns the identifier of the current target, currently, it may be (but not limited to):
+Architectury Injectables provide `ArchitecturyTarget.getCurrentTarget()`, which returns the identifier of the current target, it may be (but not limited to):
 - fabric
 - forge
 
