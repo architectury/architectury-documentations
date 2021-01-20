@@ -2,7 +2,7 @@
 layout: page
 title: Registering Content
 parent: Architectury API
-nav_order: 1
+nav_order: 3
 ---
 
 # Registering Content
@@ -26,6 +26,8 @@ EventBuses.registerModEventBus(MOD_ID, FMLJavaModLoadingContext.get().getModEven
 ```
 
 ## Registering our content through Architectury's Registries
+
+### Via Registry
 **NOTE: The following tutorial is delivered in mojmap**
 
 We will create a lazy registries object, this variable is lazy because, at the point that we statically initialize this class, the mod event bus might not have passed to Architectury API, causing a crash.
@@ -36,8 +38,28 @@ public static final Lazy<Registries> REGISTRIES = new Lazy<>(() -> Registries.ge
 
 During your mods' initialization, you may use this `REGISTRIES` field to get the wrapped registries. With that, we can register our items.
 ```java
-Registry<Item> items = REGISTRIES.get().get(net.minecraft.util.registry.Registry.ITEM_KEY);
-RegistrySupplier<Item> exampleItem = items.registerSupplied(new Identifier(MOD_ID, "example_item"), () -> new Item(new Item.Settings()));
+Registry<Item> items = REGISTRIES.get().get(net.minecraft.core.Registry.ITEM_KEY);
+RegistrySupplier<Item> exampleItem = items.registerSupplied(new ResourceLocation(MOD_ID, "example_item"), () -> new Item(new Item.Properties()));
 ```
 
 Notice that the value returned is a `RegistrySupplier`, this is because our content may not have been registered at this point, we might still be waiting for the registry event.
+
+### Via DeferredRegister
+
+We will create a deferred register, we will then use this to register our entries.
+
+```java
+public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(MOD_ID, Registry.ITEM_REGISTRY);
+```
+
+After statically defining our deferred register, we can add entries to it, please note that the entries are not registered at this point, so we must refrain from accessing them until we actually register them.
+
+```java
+public static final RegistrySupplier<Item> EXAMPLE_ITEM = ITEMS.register("example_item", () -> new Item(new Item.Properties()));
+```
+
+We can now submit our registry entries to the registry themselves, we will do this in our initialization block, please make sure that this is called only after we pass our mod event bus to architectury:
+
+```java
+ITEMS.register();
+```

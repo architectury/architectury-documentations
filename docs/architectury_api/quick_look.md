@@ -2,7 +2,7 @@
 layout: page
 title: Quick Look
 parent: Architectury API
-nav_order: 1
+nav_order: 2
 ---
 
 # Quick Look

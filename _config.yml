@@ -28,6 +28,7 @@ github_username: architectury
 
 # Build settings
 theme: "just-the-docs"
+highlight_theme: Base-16-tomorrow-dark
 plugins:
   - jekyll-feed
 
