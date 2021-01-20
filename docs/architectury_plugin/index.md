@@ -20,7 +20,7 @@ Architectury Plugin is a Gradle plugin to allow easier multi-modloader set-ups u
 Architectury Plugin is an experimental project, issues may arise, make sure you report them to the issue tracker.
 
 ### Gradle Version Support
-Forge Loom supports **Gradle 5.5.1** and up, with support for Gradle 6.
+Architectury Plugin supports **Gradle 5.5.1** and up, with support for Gradle 6.
 
 ### Things that are transformed
 - `@Environment` and `EnvType` are remapped to `@OnlyIn` and `Dist`
