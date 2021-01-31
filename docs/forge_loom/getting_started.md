@@ -30,7 +30,17 @@ pluginManagement {
 ```
 
 Within `gradle.properties`, insert `loom.forge=true`.  
-Within `build.gradle`, insert the Forge dependency:
+Within `build.gradle`, go to the `plugins` block and replace `fabric-loom` with any version of `forgified-fabric-loom`, for example:
+
+```diff
+plugins {
+-	id 'fabric-loom' version '0.5-SNAPSHOT'
++	id 'forgified-fabric-loom' version '0.6.54'
+	id 'maven-publish'
+}
+```
+
+and insert the Forge dependency in the `dependencies` block:
 
 ```groovy
 dependencies {
