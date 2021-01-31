@@ -35,7 +35,7 @@ Within `build.gradle`, go to the `plugins` block and replace `fabric-loom` with 
 ```diff
 plugins {
 -	id 'fabric-loom' version '0.5-SNAPSHOT'
-+	id 'forgified-fabric-loom' version '0.6.54'
++	id 'forgified-fabric-loom' version '0.6.60'
 	id 'maven-publish'
 }
 ```

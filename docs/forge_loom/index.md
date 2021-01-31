@@ -20,9 +20,7 @@ Forge Loom currently only supports [IntelliJ IDEA](https://www.jetbrains.com/ide
 Forge Loom is an experimental project. Thus, issues may arise, make sure you report them to the issue tracker.
 
 ### Mapping Options
-You may use [Yarn](https://www.github.com/FabricMC/yarn/) or Official Mojang Mappings for Forge Loom, MCP is possible, but you are on your own.
-
-[Read Me](/architectury-documentations/docs/forge_loom/using_other_mappings) to enable support for non-mojmap mappings.
+You may use [Yarn](https://www.github.com/FabricMC/yarn/) or Official Mojang Mappings for Forge Loom, [MCP](/architectury-documentations/docs/forge_loom/using_mcp) is also supported.
 
 ### Gradle Version Support
 Forge Loom supports Gradle 4.9 and up, with support for Gradle 6.
