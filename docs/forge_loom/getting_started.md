@@ -40,6 +40,8 @@ plugins {
 }
 ```
 
+**NOTE:** 0.6.60 is not the latest version, check the latest version here: [ ![Download](https://api.bintray.com/packages/shedaniel/cloth/forgified-fabric-loom/images/download.svg) ](https://bintray.com/shedaniel/cloth/forgified-fabric-loom/_latestVersion)
+
 and insert the Forge dependency in the `dependencies` block:
 
 ```groovy
