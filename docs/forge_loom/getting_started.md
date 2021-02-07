@@ -20,9 +20,8 @@ Within `settings.gradle`, insert the repository to Forge Loom:
 ```diff
 pluginManagement {
     repositories {
-        jcenter()
         maven { url "https://maven.fabricmc.net/" }
-+       maven { url "https://dl.bintray.com/shedaniel/cloth" }
++       maven { url "https://maven.shedaniel.me/" }
 +       maven { url "https://files.minecraftforge.net/maven/" }
         gradlePluginPortal()
     }
@@ -40,7 +39,7 @@ plugins {
 }
 ```
 
-**NOTE:** 0.6.60 is not the latest version, check the latest version here: [ ![Download](https://api.bintray.com/packages/shedaniel/cloth/forgified-fabric-loom/images/download.svg) ](https://bintray.com/shedaniel/cloth/forgified-fabric-loom/_latestVersion)
+**NOTE:** 0.6.60 is not the latest version, check the latest version [here](https://maven.shedaniel.me/forgified-fabric-loom/forgified-fabric-loom.gradle.plugin/)
 
 and insert the Forge dependency in the `dependencies` block:
 
