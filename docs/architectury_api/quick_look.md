@@ -53,7 +53,7 @@ nav_order: 2
 ## Extensions
 
 | Class Name | Description
-| ArchitecturyBlockEntity | Additional extensions to sync data from the server to the client.
+| BlockEntityExtensions | Additional extensions to sync data from the server to the client.
 | BlockProperties | Additional block properties.
 
 ---
