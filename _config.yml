@@ -22,8 +22,7 @@ title: architectury
 email: daniel@shedaniel.me
 description: >-
   Documentation of Architectury.
-baseurl: "/architectury-documentations"
-url: "https://architectury.github.io"
+url: "https://docs.architectury.dev"
 github_username: architectury
 
 # Build settings

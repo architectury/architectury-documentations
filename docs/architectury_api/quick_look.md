@@ -14,7 +14,7 @@ nav_order: 2
 
 | Class Name | Description
 | Platform | Provides access to the platform's name, environment, etc.
-| Registries | Provides a platform-agnostic wrapper of minecraft registries, should be used to register content. ([Read More](/architectury-documentations/docs/architectury_api/registry))
+| Registries | Provides a platform-agnostic wrapper of minecraft registries, should be used to register content. ([Read More](/docs/architectury_api/registry))
 | KeyBindings | Provides method(s) to register the key bindings.
 | CreativeTabs | Provides method(s) to construct creative tabs.
 | MenuRegistry | Provides method(s) to construct container menus, and open them.
