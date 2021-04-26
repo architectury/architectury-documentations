@@ -51,6 +51,7 @@ plugins:
 #   - vendor/gems/
 #   - vendor/ruby/
 
+keep_files: [.git, CNAME]
 color_scheme: architectury_style
 
 last_edit_timestamp: true

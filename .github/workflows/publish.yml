@@ -13,7 +13,3 @@ jobs:
       - uses: helaili/jekyll-action@2.0.5
         env:
           JEKYLL_PAT: ${{ secrets.JEKYLL_PAT }}
-      - uses: finnp/create-file-action@master
-        env:
-          FILE_NAME: CNAME
-          FILE_DATA: docs.architectury.dev
