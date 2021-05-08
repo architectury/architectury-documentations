@@ -1,5 +1,5 @@
 ---
-ayout: page
+layout: page
 title: Fixing ForgeGradle Mixin refmaps
 parent: Forge Loom
 
