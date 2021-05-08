@@ -33,7 +33,7 @@ EventBuses.registerModEventBus(MOD_ID, FMLJavaModLoadingContext.get().getModEven
 We will create a lazy registries object, this variable is lazy because, at the point that we statically initialize this class, the mod event bus might not have passed to Architectury API, causing a crash.
 
 ```java
-public static final Lazy<Registries> REGISTRIES = new Lazy<>(() -> Registries.get(MOD_ID));
+public static final LazyLoadedValue<Registries> REGISTRIES = new LazyLoadedValue<>(() -> Registries.get(MOD_ID));
 ```
 
 During your mods' initialization, you may use this `REGISTRIES` field to get the wrapped registries. With that, we can register our items.

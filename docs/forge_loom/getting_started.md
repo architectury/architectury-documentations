@@ -21,7 +21,7 @@ Within `settings.gradle`, insert the repository to Forge Loom:
 pluginManagement {
     repositories {
         maven { url "https://maven.fabricmc.net/" }
-+       maven { url "https://maven.shedaniel.me/" }
++       maven { url "https://maven.architectury.dev/" }
 +       maven { url "https://files.minecraftforge.net/maven/" }
         gradlePluginPortal()
     }
@@ -34,12 +34,12 @@ Within `build.gradle`, go to the `plugins` block and replace `fabric-loom` with 
 ```diff
 plugins {
 -	id 'fabric-loom' version '0.5-SNAPSHOT'
-+	id 'forgified-fabric-loom' version '0.6.60'
++	id 'forgified-fabric-loom' version '0.6-SNAPSHOT'
 	id 'maven-publish'
 }
 ```
 
-**NOTE:** 0.6.60 is not the latest version, check the latest version [here](https://maven.shedaniel.me/forgified-fabric-loom/forgified-fabric-loom.gradle.plugin/)
+**NOTE:** 0.6-SNAPSHOT is the current recommended version.
 
 and insert the Forge dependency in the `dependencies` block:
 

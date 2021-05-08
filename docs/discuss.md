@@ -9,4 +9,4 @@ nav_order: 998
 
 ---
 
-For support and discussions, you may use [the Architectury Discord Server](https://discord.gg/C2RdJDpRBP).
+For support and discussions, you may use [the Architectury Discord Server](https://discord.architectury.dev/).
