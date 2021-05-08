@@ -1,11 +1,11 @@
 ---
 layout: page
-title: @ExpectPlatform
+title: ExpectPlatform Annotation
 parent: Architectury Plugin
 nav_order: 2
 ---
 
-# @ExpectPlatform
+# ExpectPlatform Annotation
 {: .no_toc }
 
 ---

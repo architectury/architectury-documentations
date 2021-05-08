@@ -28,5 +28,5 @@ Architectury Injectables provide `ArchitecturyTarget.getCurrentTarget()`, which 
 
 ### Expect Platform
 
-View more at [@ExpectPlatform](/docs/architectury_plugin/expect_platform).
+View more at [ExpectPlatform Annotation](/docs/architectury_plugin/expect_platform).
 
