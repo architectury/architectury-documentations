@@ -11,11 +11,12 @@ nav_order: 1
 
 ---
 
-Clone the [Fabric Example Mod](https://github.com/FabricMC/fabric-example-mod/) and import build.gradle as a project.
+## The Easy Way (100% From Scratch)
+Clone the [Architectury Loom Example Mod](https://github.com/architectury/archloom-example-mod) and import build.gradle as a project.
 
-## Converting the project to Forge
+## The Not Quite So Easy Way (Converting [Fabric Mods](https://github.com/FabricMC/fabric-example-mod) to Forge)
 
-Within `settings.gradle`, insert the repository to Forge Loom:
+Within `settings.gradle`, insert the repository to Architectury Loom (as well as Forge's maven for Forge / MCP / etc.):
 
 ```diff
 pluginManagement {
@@ -28,18 +29,18 @@ pluginManagement {
 }
 ```
 
-Within `gradle.properties`, insert `loom.forge=true`.  
+Within `gradle.properties`, insert `loom.platform=forge`.  
 Within `build.gradle`, go to the `plugins` block and replace `fabric-loom` with any version of `forgified-fabric-loom`, for example:
 
 ```diff
 plugins {
--	id 'fabric-loom' version '0.5-SNAPSHOT'
-+	id 'forgified-fabric-loom' version '0.6-SNAPSHOT'
+-	id 'fabric-loom' version '<version>'
++	id 'forgified-fabric-loom' version '0.7.2-SNAPSHOT'
 	id 'maven-publish'
 }
 ```
 
-**NOTE:** 0.6-SNAPSHOT is the current recommended version.
+**NOTE:** 0.7.2-SNAPSHOT is the current recommended version.
 
 and insert the Forge dependency in the `dependencies` block:
 
