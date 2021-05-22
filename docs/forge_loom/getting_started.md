@@ -30,7 +30,7 @@ pluginManagement {
 ```
 
 Within `gradle.properties`, insert `loom.platform=forge`.  
-Within `build.gradle`, go to the `plugins` block and replace `fabric-loom` with any version of `forgified-fabric-loom`, for example:
+Within `build.gradle`, go to the `plugins` block and replace `fabric-loom` with any version of `dev.architectury.loom`, for example:
 
 ```diff
 plugins {
