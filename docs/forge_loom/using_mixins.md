@@ -32,6 +32,8 @@ You must tell Loom what mixins you have, by declaring the following in your `bui
 
 ```groovy
 loom {
-    mixinConfig "mixin.examplemod.json"
+    forge {
+        mixinConfig "mixin.examplemod.json"
+    }
 }
 ```
