@@ -27,19 +27,19 @@ EventBuses.registerModEventBus(MOD_ID, FMLJavaModLoadingContext.get().getModEven
 
 ## Registering our content through Architectury's Registries
 
-### Via Registry
-**NOTE: The following tutorial is delivered in mojmap**
+### Via Registrar
+**NOTE: The following tutorial is shown in mojmap**
 
-We will create a lazy registries object, this variable is lazy because, at the point that we statically initialize this class, the mod event bus might not have passed to Architectury API, causing a crash.
+We will create a lazy registries object, this is to prevent crashes due to static load orders.
 
 ```java
-public static final LazyLoadedValue<Registries> REGISTRIES = new LazyLoadedValue<>(() -> Registries.get(MOD_ID));
+public static final Supplier<Registries> REGISTRIES = Suppliers.memorize(() -> Registries.get(MOD_ID));
 ```
 
 During your mods' initialization, you may use this `REGISTRIES` field to get the wrapped registries. With that, we can register our items.
 ```java
-Registry<Item> items = REGISTRIES.get().get(net.minecraft.core.Registry.ITEM_KEY);
-RegistrySupplier<Item> exampleItem = items.registerSupplied(new ResourceLocation(MOD_ID, "example_item"), () -> new Item(new Item.Properties()));
+Registrar<Item> items = REGISTRIES.get().get(Registry.ITEM_KEY);
+RegistrySupplier<Item> exampleItem = items.register(new ResourceLocation(MOD_ID, "example_item"), () -> new Item(new Item.Properties()));
 ```
 
 Notice that the value returned is a `RegistrySupplier`, this is because our content may not have been registered at this point, we might still be waiting for the registry event.

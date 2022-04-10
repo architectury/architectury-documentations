@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Changing Log Level
-parent: Forge Loom
+parent: Architectury Loom
 
 ---
 

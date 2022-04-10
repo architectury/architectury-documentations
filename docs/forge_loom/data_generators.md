@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Data Generators
-parent: Forge Loom
+parent: Architectury Loom
 ---
 
 # Data Generators
@@ -9,7 +9,7 @@ parent: Forge Loom
 
 ---
 
-Data Generators Support has been added to Forge Loom, starting from 0.6.55, this is how you declare it:
+Data Generators Support has been added to Architectury Loom, starting from 0.6.55, this is how you declare it:
 ```groovy
 loom {
     dataGen {
@@ -20,7 +20,7 @@ loom {
 
 Run `runData` or use your IDE's run configurations to generate the assets, should be the same as ForgeGradle.
 
-Forge Loom automatically adds the following arguments: `--all --mod <the mod ids> --output <path to src/generated/resources>`, if you wish to add more (like `--existing`), following is an example on how to add additional arguments:
+Architectury Loom automatically adds the following arguments: `--all --mod <the mod ids> --output <path to src/generated/resources>`, if you wish to add more (like `--existing`), following is an example on how to add additional arguments:
 ```groovy
 loom {
     launches {

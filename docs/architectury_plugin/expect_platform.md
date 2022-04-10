@@ -16,7 +16,7 @@ Here we will declare a method with `@ExpectPlatform`, please note that you don't
 ```java
 package net.examplemod;
 
-import me.shedaniel.architectury.annotations.ExpectPlatform;
+import dev.architectury.injectables.annotations.ExpectPlatform;
 
 import java.io.File;
 

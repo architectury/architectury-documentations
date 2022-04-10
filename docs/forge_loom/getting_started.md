@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Getting Started
-parent: Forge Loom
+parent: Architectury Loom
 nav_order: 1
 ---
 
@@ -16,7 +16,7 @@ Download templates from [Architectury Templates](https://github.com/architectury
 
 ## The Not Quite So Easy Way (Converting [Fabric Mods](https://github.com/FabricMC/fabric-example-mod) to Forge)
 
-Within `settings.gradle`, insert the repository to Architectury Loom (as well as Forge's maven for Forge / MCP / etc.):
+- Within `settings.gradle`, insert the repository to Architectury Loom (as well as Forge's maven for Forge / MCP / etc.):
 
 ```diff
 pluginManagement {
@@ -29,20 +29,20 @@ pluginManagement {
 }
 ```
 
-Within `gradle.properties`, insert `loom.platform=forge`.  
-Within `build.gradle`, go to the `plugins` block and replace `fabric-loom` with any version of `dev.architectury.loom`, for example:
+- Within `gradle.properties`, insert `loom.platform=forge`.  
+- Within `build.gradle`, go to the `plugins` block and replace `fabric-loom` with any version of `dev.architectury.loom`, for example:
 
 ```diff
 plugins {
 -	id 'fabric-loom' version '<version>'
-+	id 'dev.architectury.loom' version '0.10.0-SNAPSHOT'
++	id 'dev.architectury.loom' version '0.11.0-SNAPSHOT'
 	id 'maven-publish'
 }
 ```
 
 **NOTE:** 0.10.0-SNAPSHOT is the current recommended version.
 
-and insert the Forge dependency in the `dependencies` block:
+- Insert the Forge dependency in the `dependencies` block:
 
 ```groovy
 dependencies {

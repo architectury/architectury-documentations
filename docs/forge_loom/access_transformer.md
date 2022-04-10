@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Access Transformer
-parent: Forge Loom
+parent: Architectury Loom
 ---
 
 # Access Transformer

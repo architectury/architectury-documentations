@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Regenerating Run Configurations
-parent: Forge Loom
+parent: Architectury Loom
 
 ---
 
