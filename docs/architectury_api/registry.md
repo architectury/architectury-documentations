@@ -33,7 +33,7 @@ EventBuses.registerModEventBus(MOD_ID, FMLJavaModLoadingContext.get().getModEven
 We will create a lazy registries object, this is to prevent crashes due to static load orders.
 
 ```java
-public static final Supplier<Registries> REGISTRIES = Suppliers.memorize(() -> Registries.get(MOD_ID));
+public static final Supplier<Registries> REGISTRIES = Suppliers.memoize(() -> Registries.get(MOD_ID));
 ```
 
 During your mods' initialization, you may use this `REGISTRIES` field to get the wrapped registries. With that, we can register our items.
