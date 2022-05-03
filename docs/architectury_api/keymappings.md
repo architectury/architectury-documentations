@@ -2,7 +2,7 @@
 layout: page
 title: KeyMappings
 parent: Architectury API
-nav_order: 5
+nav_order: 6
 ---
 
 # KeyMappings
