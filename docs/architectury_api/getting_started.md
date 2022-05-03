@@ -12,6 +12,8 @@ nav_order: 1
 
 Download templates from [Architectury Templates](https://github.com/architectury/architectury-templates/releases/) and import it as a Gradle project.
 
+You will want to change every reference of examplemod to your mod, this includes `gradle.properies`, `fabric.mod.json`, `META-INF/mods.toml`, `quilt.mod.json` (If Applicable), and relocate the classes. You will also need to change the access widener file name in `common/build.gradle`.
+
 ## I don't want Architectury API...
 
 Remove lines related to Architectury API in each of the `build.gradle` in `common/`, `fabric/`, and `forge/`. They should look at this:

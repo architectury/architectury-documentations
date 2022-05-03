@@ -21,7 +21,9 @@ Declaring the following in your `forge/build.gradle`.
 
 ```groovy
 loom {
-    mixinConfig "mixin.examplemod-common.json"
+    forge {
+        mixinConfig "mixin.examplemod-common.json"
+    }
 }
 ```
 
