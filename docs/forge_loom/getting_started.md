@@ -35,12 +35,12 @@ pluginManagement {
 ```diff
 plugins {
 -	id 'fabric-loom' version '<version>'
-+	id 'dev.architectury.loom' version '0.11.0-SNAPSHOT'
++	id 'dev.architectury.loom' version '0.12.0-SNAPSHOT'
 	id 'maven-publish'
 }
 ```
 
-**NOTE:** 0.10.0-SNAPSHOT is the current recommended version.
+**NOTE:** 0.12.0-SNAPSHOT is the current recommended version.
 
 - Insert the Forge dependency in the `dependencies` block:
 
